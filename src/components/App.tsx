@@ -1,18 +1,26 @@
 import * as React from 'react';
 
-interface Props {
-   name: string
+import Sidebar from './Sidebar';
+import Home from './Home';
+
+const app = {
+  height: '95vh',
+  display: 'flex'
 }
 
-class App extends React.Component<Props> {
-  render() {
-    const { name } = this.props;
-    return (
-      <div>
-        <h1>Hello {name}</h1>
-      </div>
-    )
-  }
-}
+const App: React.FC = () => {
+  const [view, changeView] = React.useState('home');
+
+  // const changeView = React.useCallback(() => {
+
+  // });
+
+  return (
+    <div style={app}>
+      <Sidebar />
+      <Home />
+    </div>
+  );
+};
 
 export default App;

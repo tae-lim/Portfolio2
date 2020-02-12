@@ -1,6 +1,21 @@
-$primary-color: white;
+$primary-color: #1976d2;
+$primary-light: #63a4ff;
+$primary-dark: #004ba0;
+
 $bg: black;
+$font-stack: 'Helvetica, sans-serif';
+
 h1 {
   color: $primary-color;
-  background-color: $bg;
+  font-family: $font-stack;
+}
+
+h2 {
+  color: 'black',
+}
+
+.layout {
+  display: 'flex';
+  flex-direction: 'column';
+  width: '10%';
 }
