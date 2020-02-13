@@ -6,11 +6,13 @@ h1 {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: -2px;
+  color: white;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 400;
+  color: white;
 }
 
 .main-container {
@@ -100,9 +102,9 @@ h2 {
 }
 
 .animated {
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: both;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 3s;
   -webkit-animation-fill-mode: both
 }
 
