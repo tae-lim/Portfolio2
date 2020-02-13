@@ -7,11 +7,10 @@ $font-stack: 'Helvetica, sans-serif';
 
 h1 {
   color: $primary-color;
-  font-family: $font-stack;
 }
 
 h2 {
-  color: 'black',
+  color: $primary-color;
 }
 
 .layout {

@@ -1,15 +1,21 @@
+body {
+  font-family: circular, 'segoe ui', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 .main-container {
   height: 98vh;
   display: flex;
-}
-
-.home-container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5rem;
 }
 
 .sidebar-container {
@@ -37,6 +43,30 @@
   display: flex;
 }
 
+.home-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+}
+
+.about-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+}
+
+.about-section {
+  width: 50%;
+}
+
+
+
 /* .alert-enter {
   opacity: 0;
   transform: translate3d(0,40px,0);
@@ -60,7 +90,7 @@
 
 @-webkit-keyframes fadeInUp {
   from {
-    transform: translate3d(0,40px,0)
+    transform: translate3d(0,40px,0);
   }
 
   to {
@@ -72,7 +102,7 @@
 .animated {
   animation-duration: 2s;
   animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 2s;
   -webkit-animation-fill-mode: both
 }
 
