@@ -5,15 +5,15 @@ const duration = 8000;
 
 const Home: React.FC = () => {
 
-  const [nameIntro, setNameIntro] = React.useState(false);
-  const [swDevIntro, setSwDevIntro] = React.useState(false);
-  const [occupationsIntro, setOccupationsIntro] = React.useState(false);
+  // const [nameIntro, setNameIntro] = React.useState(false);
+  // const [swDevIntro, setSwDevIntro] = React.useState(false);
+  // const [occupationsIntro, setOccupationsIntro] = React.useState(false);
 
-  React.useEffect(() => {
-    setNameIntro(true);
-    setSwDevIntro(true);
-    setOccupationsIntro(true);
-  });
+  // React.useEffect(() => {
+  //   setNameIntro(true);
+  //   setSwDevIntro(true);
+  //   setOccupationsIntro(true);
+  // });
 
   return (
     <div className="home-container">
@@ -39,8 +39,8 @@ const Home: React.FC = () => {
 
       </ReactTransitionGroup.CSSTransition> */}
       <h1 className="animated animatedFadeInUp fadeInUp">Hi, I'm Tae Lim</h1>
-      <h1 className="animated animatedFadeInUp fadeInUp">Software Developer</h1>
-      <h4 className="animated animatedFadeInUp fadeInUp">Frontend | Backend | Engineer</h4>
+      <h2 className="animated animatedFadeInUp fadeInUp">Software Developer</h2>
+      <h4 className="animated animatedFadeInUp fadeInUp">Frontend | Backend | Fullstack</h4>
     </div>
   );
 }
