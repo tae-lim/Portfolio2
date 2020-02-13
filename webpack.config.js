@@ -19,6 +19,13 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
         test: /\.ts(x)?$/,
         use: [
           'awesome-typescript-loader'

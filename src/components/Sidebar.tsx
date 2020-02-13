@@ -7,21 +7,13 @@ import '../styles.scss';
   
 // }
 
-const layout = {
-  display: 'flex',
-  width: '5rem',
-  height: '100%',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-  borderRight: '1px solid black'
-};
-
-const Sidebar: React.FC = () => {
+const Sidebar: React.FC = props => {
+  const { view, setView } = props;
   return (
-    <div style={layout}>
-      <div>TL</div>
-      <SidebarNavigation />
-      <div>blah</div>
+    <div className="sidebar-container">
+      <div className="logo-container">TL</div>
+      <SidebarNavigation view={view} setView={setView}/>
+      <div className="contact-container">blah</div>
     </div>
   );
 };

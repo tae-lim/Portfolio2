@@ -2,23 +2,21 @@ import * as React from 'react';
 
 import Sidebar from './Sidebar';
 import Home from './Home';
-
-const app = {
-  height: '95vh',
-  display: 'flex'
-}
+import About from './About';
 
 const App: React.FC = () => {
-  const [view, changeView] = React.useState('home');
-
-  // const changeView = React.useCallback(() => {
-
-  // });
+  const [view, setView] = React.useState('home');
+  let main;
+  if (view === 'home') {
+    main = <Home />
+  } else if (view === 'about') {
+    main = <About />
+  }
 
   return (
-    <div style={app}>
-      <Sidebar />
-      <Home />
+    <div className="main-container">
+      <Sidebar view={view} setView={setView}/>
+      {main}
     </div>
   );
 };

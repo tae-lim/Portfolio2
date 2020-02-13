@@ -1,0 +1,38 @@
+.main-container {
+  height: 98vh;
+  display: flex;
+}
+
+.home-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+}
+
+.sidebar-container {
+  display: flex;
+  width: 5rem;
+  min-width: 5rem;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid black;
+}
+
+.logo-container {
+  height: 33.33%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-container {
+  height: 33.33%
+}
+
+.contact-container {
+  height: 33.33%;
+  display: flex;
+}
