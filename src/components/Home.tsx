@@ -1,38 +1,46 @@
 import * as React from 'react';
 import * as ReactTransitionGroup from 'react-transition-group';
 
-const duration = 1000;
-
-const defaultStyle = {
-  transition: `opacity ${duration}ms ease-out`,
-  opacity: 0,
-};
-
-const transitionStyles = {
-  entering: { opacity: 1 },
-  entered:  { opacity: 1 }
-};
+const duration = 8000;
 
 const Home: React.FC = () => {
 
-  const [intro, setIntro] = React.useState(false);
+  const [nameIntro, setNameIntro] = React.useState(false);
+  const [swDevIntro, setSwDevIntro] = React.useState(false);
+  const [occupationsIntro, setOccupationsIntro] = React.useState(false);
 
   React.useEffect(() => {
-    setIntro(true);
+    setNameIntro(true);
+    setSwDevIntro(true);
+    setOccupationsIntro(true);
   });
 
   return (
     <div className="home-container">
-      <ReactTransitionGroup.Transition 
-        in={false} 
-        timeout={duration}>
-        <h1 style={{
-          ...defaultStyle,
-          ...transitionStyles
-        }}>Hi, I'm Tae Lim</h1>
-      </ReactTransitionGroup.Transition>
-      <h1>Software Developer</h1>
-      <h4>Frontend | Backend | Engineer</h4>
+      {/* <ReactTransitionGroup.CSSTransition 
+        in={nameIntro} 
+        timeout={duration}
+        classNames="alert"
+      >
+
+      </ReactTransitionGroup.CSSTransition>
+      <ReactTransitionGroup.CSSTransition 
+        in={swDevIntro} 
+        timeout={12000}
+        classNames="alert"
+      >
+
+      </ReactTransitionGroup.CSSTransition>
+      <ReactTransitionGroup.CSSTransition 
+        in={occupationsIntro} 
+        timeout={18000}
+        classNames="alert"
+      >
+
+      </ReactTransitionGroup.CSSTransition> */}
+      <h1 className="animated animatedFadeInUp fadeInUp">Hi, I'm Tae Lim</h1>
+      <h1 className="animated animatedFadeInUp fadeInUp">Software Developer</h1>
+      <h4 className="animated animatedFadeInUp fadeInUp">Frontend | Backend | Engineer</h4>
     </div>
   );
 }
