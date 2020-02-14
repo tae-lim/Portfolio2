@@ -15,6 +15,26 @@ h2 {
   color: white;
 }
 
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+h6 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
 .main-container {
   height: 98vh;
   display: flex;
@@ -76,7 +96,7 @@ h2 {
 
 .about-stack {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 5%;
   align-self: center;
   justify-content: space-around;
@@ -91,7 +111,7 @@ h2 {
 }
 
 .about-stack-divider {
-  border: 1px solid black;
+  border: 1px solid white;
   height: 90%;
   width: 2px;
 }
