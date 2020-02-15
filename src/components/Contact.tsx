@@ -1,22 +1,37 @@
 import * as React from 'react';
-import * as THEME from 'three';
+import GLOBE from 'vanta/dist/vanta.globe.min';
+import * as THREE from 'three';
+
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 const Contact: React.FC = () => {
+  const [vantaEffect, setVantaEffect] = React.useState(0);
+  const myRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(GLOBE({
+        el: myRef.current,
+        THREE: THREE
+      }));
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    }
+  }, [vantaEffect]);
+
   return (
-    <div>
+    <div className="contact-container" ref={myRef}>
       <h1>Contact Me</h1>
-      <form>
-        <input input="text" placeHolder="Name"></input>
-        <input input="text" placeHolder="Email"></input>
-        <input input="text" placeHolder="Message"></input>
-      </form>
-      <div>
-        <div>Resume</div>
-        <div>LinkedIn</div>
-        <div>Instagram</div>
-        <div>Email</div>
-        <div>Github</div>
-      </div>
+      <nav className="contact-icon-container">
+        <div className={"contact-icon-wrapper sidebar-assignment-icon"}><AssignmentIndIcon /></div>
+        <div className={"contact-icon-wrapper sidebar-linkedin-icon"}><LinkedInIcon /></div>
+        <div className={"contact-icon-wrapper sidebar-github-icon"}><GitHubIcon /></div>
+        <div className={"contact-icon-wrapper sidebar-instagram-icon"}><InstagramIcon /></div>
+      </nav>
     </div>
   );
 };
