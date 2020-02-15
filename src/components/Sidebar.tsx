@@ -28,9 +28,9 @@ const Sidebar: React.FC = props => {
         <div className={"sidebar-icon sidebar-work-icon"} onClick={() => {setView('work')}}><WorkIcon /></div>
         <div className={"sidebar-icon sidebar-contact-icon"} onClick={() => {setView('contact')}}><MailOutlineIcon /></div>
       </nav>
-      <div className="contact-container">
+      <div className="sidebar-contact-container">
         <div className="empty-container"></div>
-        <nav className="contact-wrapper">
+        <nav className="sidebar-contact-wrapper">
           <div className={"sidebar-icon sidebar-assignment-icon"}><AssignmentIndIcon /></div>
           <div className={"sidebar-icon sidebar-linkedin-icon"}><LinkedInIcon /></div>
           <div className={"sidebar-icon sidebar-github-icon"}><GitHubIcon /></div>

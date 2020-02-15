@@ -32,21 +32,8 @@ const About: React.FC = () => {
         </div>
         <div className="about-section">
           <p>I love being stimulated and engaged through challenging and interesting problems and take deep personal satisfaction in my work, relationships, and accomplishments</p>
-          <p>I always want to learn new languages, technologies, and methodologies so I developed this portfolio with a stack I've never used!</p>
+          <p>I always want to learn new languages, technologies, and methodologies so I developed this portfolio with a stack I've never used! Check out details here!</p>
           <p>My future plans for this portfolio is to integrate GraphQL and the Apollo Client!</p>
-        </div>
-      </div>
-      <div className="about-stack">
-        <div className="about-stack-info">
-          <div>Placeholder</div>
-          <h6>Front End</h6>
-          <div>Typescript, React Hooks, SASS, Context API</div>
-        </div>
-        <span className="about-stack-divider"></span>
-        <div className="about-stack-info">
-          <div>Placeholder</div>
-          <h6>Back End</h6>
-          <div>Python, Flask, AWS</div>
         </div>
       </div>
     </div>
