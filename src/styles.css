@@ -64,7 +64,7 @@ p {
   justify-content: space-between;
 }
 
-.contact-container {
+.sidebar-contact-container {
   display: flex;
   height: 33.33%;
   flex-direction: column;
@@ -74,7 +74,7 @@ p {
   height: 50%;
 }
 
-.contact-wrapper {
+.sidebar-contact-wrapper {
   display: flex;
   height: 50%;
   flex-direction: column;
@@ -109,6 +109,8 @@ p {
 .about-section {
   display: flex;
   flex-direction: column;
+  width: 33.33%;
+  min-width: 20rem;
 }
 
 .about-stack {
@@ -131,6 +133,37 @@ p {
   border: 1px solid white;
   height: 90%;
   width: 2px;
+}
+
+.skills-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding-left: 5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding-left: 5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-icon-container {
+  display: flex;
+}
+
+.contact-icon-wrapper {
+
 }
 
 /* .sidebar-about-icon:hover {
