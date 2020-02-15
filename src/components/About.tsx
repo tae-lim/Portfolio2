@@ -26,7 +26,7 @@ const About: React.FC = () => {
       </div>
       <div className="about-section-container">
         <div className="about-section">
-          <p>I've always had an enthusiasm for technology growing up in Silicon Valley.</p>
+          <p>My name is Tae Lim and I've always had an enthusiasm for technology growing up in Silicon Valley.</p>
           <p>I built my first desktop in middle school, took Java in high school, and built cryptocurrency mining rigs during undergrad.</p>
           <p>Programming was only a hobby in lieu of other interests, but I began taking it seriously in 2018.</p>
         </div>

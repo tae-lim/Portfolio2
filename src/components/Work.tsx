@@ -9,11 +9,10 @@ import GroupIcon from '@material-ui/icons/Group';
 
 const Work: React.FC = () => {
   return (
-    <div>
+    <div className="work-container">
+      <h1>Work Experience & Projects</h1>
       <VerticalTimeline>
-
-
-      <VerticalTimelineElement
+        <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}

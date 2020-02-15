@@ -26,6 +26,13 @@ const Contact: React.FC = () => {
   return (
     <div className="contact-container" ref={myRef}>
       <h1>Contact Me</h1>
+      <p>I am interested in working at the following cities</p>
+      <ul>
+        <li>San Fracisco Bay Area</li>
+        <li>Greater Los Angeles Area</li>
+        <li>Dallas, TX</li>
+        <li>Chicago, IL</li>
+      </ul>
       <nav className="contact-icon-container">
         <div className={"contact-icon-wrapper sidebar-assignment-icon"}><AssignmentIndIcon /></div>
         <div className={"contact-icon-wrapper sidebar-linkedin-icon"}><LinkedInIcon /></div>
