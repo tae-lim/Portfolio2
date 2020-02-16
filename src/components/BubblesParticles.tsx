@@ -7,6 +7,8 @@ class BubblesParticles extends React.Component {
     return (
       <div className="particle-canvas">
         <Particles
+          height={window.outerHeight}
+          width="100%"
           params={{
             "particles": {
               "number": {
