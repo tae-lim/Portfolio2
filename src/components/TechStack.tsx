@@ -10,11 +10,11 @@ const TechStack: React.FC = props => {
       </div>
       <div className="stack-info-languages">
         <span>Languages</span>
-        <p>{appInfo.feLanguages}</p>
+        <span className="stack-info-content">{appInfo.feLanguages}</span>
       </div >
       <div className="stack-info-FLT">
         <span>Frameworks & Libraries</span>
-        <p>{appInfo.feFLT}</p>
+        <span className="stack-info-content">{appInfo.feFLT}</span>
       </div>
     </div>
   ) : '';
@@ -26,16 +26,20 @@ const TechStack: React.FC = props => {
       </div>
       <div className="stack-info-languages">
         <span>Languages</span>
-        <p>{appInfo.beLanguages}</p>
+        <span className="stack-info-content">{appInfo.beLanguages}</span>
       </div>
       <div className="stack-info-FLT">
         <span>Frameworks & Libraries</span>
-        <p>{appInfo.beFLT}</p>
+        <span className="stack-info-content">{appInfo.beFLT}</span>
       </div>
     </div>
   ) : '';
 
-  const divider = appInfo.feLanguages && appInfo.beLanguages ? <span className="tech-stack-divider"></span> : '';
+
+  const divider = appInfo.feLanguages && appInfo.beLanguages ? <span className="tech-stack-divider"></span> : ''; 
+
+  const url = appInfo.url ? <a className="app-info-link" href={appInfo.url} target="_blank">Website</a> : '';
+  const github = appInfo.github ? <a className="app-info-link" href={appInfo.github} target="_blank">Github</a> : '';
 
   return (
     <div className="app-info-container">
@@ -50,8 +54,8 @@ const TechStack: React.FC = props => {
           {backEnd}
         </div>
         <div className="app-info-links">
-          <a className="app-info-link" href={appInfo.url} target="_blank">Website</a>
-          <a className="app-info-link" href={appInfo.github} target="_blank">Github</a>
+          {url}
+          {github}
         </div>
       </div>
     </div>

@@ -24,6 +24,50 @@ const Work: React.FC = () => {
     beFLT: 'Node, Express, MongoDB'
   };
 
+  const backPacker = {
+    name: 'BackPacker',
+    description: 'Yosemite hiking guide with mobile and offline capabilities',
+    img: '',
+    url: 'https://backpackergoonies.herokuapp.com/',
+    github: 'https://github.com/tae-lim/BackPacker',
+    feLanguages: 'HTML, CSS, JavaScript',
+    feFLT: 'React, PWA',
+    beLanguages: 'JavaScript, SQL',
+    beFLT: 'Node, Express, Travis-CI, Heroku, PostgreSQL'
+  };
+
+  const greenway = {
+    name: 'Greenway',
+    description: 'Budget management software for tracking monthly user expenses, savings, and loans',
+    img: '',
+    url: 'https://greenwaypay.herokuapp.com/',
+    github: 'https://github.com/tae-lim/Greenway',
+    feLanguages: 'HTML, CSS, JavaScript',
+    feFLT: 'React, Redux, React Router, Jest',
+    beLanguages: 'JavaScript, SQL',
+    beFLT: 'Node, Express, Travis-CI, Heroku, PostgreSQL'
+  };
+
+  const vps = {
+    name: 'Virtual Power Systems',
+    description: 'Jr. Front End Developer | Milpitas, CA',
+    img: '',
+    url: 'http://www.virtualpowersystems.com/',
+    feLanguages: 'HTML, CSS, JavaScript',
+    feFLT: 'React, React Router, Jest, Enzyme, Material-UI, SSE, styled components, Event-Driven Architecture',
+  };
+
+  const portfolio = {
+    name: 'Portfolio',
+    description: 'Personal Portfolio for showcasing work experience',
+    img: '',
+    url: 'http://www.taelim.dev',
+    feLanguages: 'HTML, CSS, SASS, TypeScript',
+    feFLT: 'React, React Router',
+    beLanguages: 'Python',
+    beFLT: 'Flask, AWS/EC2'
+  };
+
   return (
     <div className="work-container">
       <SimpleParticles />
@@ -38,13 +82,7 @@ const Work: React.FC = () => {
             icon={<PersonIcon />}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           >
-            <h3 className="vertical-timeline-element-title">Portfolio</h3>
-            <h4 className="vertical-timeline-element-subtitle">Personal portfolio</h4>
-            <div>
-              <span>React</span>
-              <span>Typescript</span>
-              <span>SASS</span>
-            </div>
+            <TechStack appInfo={portfolio} />
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -55,15 +93,7 @@ const Work: React.FC = () => {
             icon={<WorkIcon />}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           >
-            <h3 className="vertical-timeline-element-title">Virtual Power Systems</h3>
-            <h4 className="vertical-timeline-element-subtitle">Milpitas, CA</h4>
-            <h4 className="vertical-timeline-element-subtitle">Front End Developer</h4>
-            <div>
-              <span>React</span>
-              <span>Event-Driven Architecture</span>
-              <span>styled-components</span>
-              <span>Material-UI</span>
-            </div>
+            <TechStack appInfo={vps} />
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -74,19 +104,7 @@ const Work: React.FC = () => {
             icon={<GroupIcon />}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           >
-            <h3 className="vertical-timeline-element-title">Greenway</h3>
-            <h4 className="vertical-timeline-element-subtitle">Budget management software for tracking monthly user expenses, savings, and loans</h4>
-            <div>
-              <span>React</span>
-              <span>Redux</span>
-              <span>Node</span>
-              <span>Express</span>
-              <span>PostgreSQL</span>
-            </div>
-            <div>
-              <span>Website</span>
-              <span>Github</span>
-            </div>
+            <TechStack appInfo={greenway}/>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -97,19 +115,7 @@ const Work: React.FC = () => {
             icon={<GroupIcon />}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           >
-            <h3 className="vertical-timeline-element-title">BackPacker</h3>
-            <h4 className="vertical-timeline-element-subtitle">Yosemite hiking guide with mobile and offline capabilities</h4>
-            <div>
-              <span>React</span>
-              <span>Node</span>
-              <span>Express</span>
-              <span>PostgreSQL</span>
-              <span>PWA</span>
-            </div>
-            <div>
-              <span>Website</span>
-              <span>Github</span>
-            </div>
+            <TechStack appInfo={backPacker}/>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement

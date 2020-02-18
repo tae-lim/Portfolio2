@@ -141,19 +141,25 @@ p {
   width: 100%;
 }
 
-.tech-stack-info p  {
+.stack-info-languages {
   font-size: 0.85rem;
 }
 
-.tech-stack-info span {
+.stack-info-FLT {
   font-size: 0.85rem;
+}
+
+.stack-info-content {
+  margin-top: 0.65rem;
 }
 
 .tech-stack-info {
   display: flex;
-  width: 48%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .stack-info-header {
@@ -172,6 +178,10 @@ p {
   height: 5rem;;
   flex-direction: column;
   align-items: center;
+}
+
+.stack-info-FLT p {
+  align-self: center;
 }
 
 .tech-stack-divider {
