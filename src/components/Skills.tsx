@@ -5,7 +5,15 @@ const Skills: React.FC = () => {
   React.useEffect(() => {
     const initTagCanvas = async () => {
       try {
-        await TagCanvas.Start('myCanvas');
+        const options = {
+        textColour: '#ff0000',
+        outlineColour: '#ff00ff',
+        reverse: true,
+        initial: [0.1, -0.1],
+        maxSpeed: 0.03,
+        decel: 0.95
+      };
+        await TagCanvas.Start('myCanvas', '', options);
       } catch(e) {
         document.getElementById('myCanvasContainer').style.display = 'none';
       }
@@ -30,7 +38,7 @@ const Skills: React.FC = () => {
           <canvas width="600" height="500" id="myCanvas">
             <p>Anything in here will be replaced on browsers that support the canvas element</p>
             <ul>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5</a></li>
+              <li id="tag1"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS3</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a></li>
               <li><a href="https://www.typescriptlang.org/" target="_blank">Typescript</a></li>
