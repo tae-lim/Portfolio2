@@ -28,9 +28,9 @@ const Skills: React.FC = () => {
         <div className="skills-info-container">
           <h1>Skills</h1>
           <div className="skills-info">
-            <p>These are technologies I've worked with to develop applications, implement features, and debug.</p>
-            <p>Technologies I previously used but would need a refresher: jQuery, AngularJS, Websockets</p>
-            <p>My future plans are to learn Python, GraphQL, and Redis.</p>
+            <p>These are technologies I've worked with to develop applications, implement features, and debug code.</p>
+            <p>There are other frameworks, libraries, and tools I haven't worked with in a while such as jQuery, AngularJS, and Backbone.</p>
+            <p>I have plans for the <span>hopefully</span> near future for learning Python + Django, GraphQL, and Redis.</p>
           </div>
         </div>
 

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import NET from 'vanta/dist/vanta.net.min';
 import * as THREE from 'three';
+import PolygonMask from './PolygonMask';
 
 const About: React.FC = () => {
   const [vantaEffect, setVantaEffect] = React.useState(0);
@@ -26,14 +27,13 @@ const About: React.FC = () => {
       </div>
       <div className="about-section-container">
         <div className="about-section">
-          <p>My name is Tae Lim and I've always had an enthusiasm for technology growing up in Silicon Valley.</p>
+          <p>My name is Tae and I've always had an enthusiasm for technology growing up in Silicon Valley.</p>
           <p>I built my first desktop in middle school, took Java in high school, and built cryptocurrency mining rigs during undergrad.</p>
           <p>Programming was only a hobby in lieu of other interests, but I began taking it seriously in 2018.</p>
         </div>
         <div className="about-section">
-          <p>I love being stimulated and engaged through challenging and interesting problems and take deep personal satisfaction in my work, relationships, and accomplishments</p>
-          <p>I always want to learn new languages, technologies, and methodologies so I developed this portfolio with a stack I've never used! Check out details here!</p>
-          <p>My future plans for this portfolio is to integrate GraphQL and the Apollo Client!</p>
+          <p>I take deep personal satisfaction in being stimulated from challenging problems and thrive in open-communication environments where autonomy is a valued and teamwork is a given.</p>
+          <p>I am always learning new languages, technologies, and methodologies to improve my engineering and communication skillsets</p>
         </div>
       </div>
     </div>
