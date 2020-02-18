@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
         reverse: true,
         initial: [0.1, -0.1],
         maxSpeed: 0.03,
-        decel: 0.95
+        decel: 1
       };
         await TagCanvas.Start('myCanvas', '', options);
       } catch(e) {
