@@ -3,6 +3,7 @@ import GLOBE from 'vanta/dist/vanta.globe.min';
 import * as THREE from 'three';
 
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -25,20 +26,26 @@ const Contact: React.FC = () => {
 
   return (
     <div className="contact-container" ref={myRef}>
-      <h1>Contact Me</h1>
-      <p>I am interested in working at the following cities</p>
-      <ul>
-        <li>San Fracisco Bay Area</li>
-        <li>Greater Los Angeles Area</li>
-        <li>Dallas, TX</li>
-        <li>Chicago, IL</li>
-      </ul>
-      <nav className="contact-icon-container">
-        <div className={"contact-icon-wrapper sidebar-assignment-icon"}><AssignmentIndIcon /></div>
-        <div className={"contact-icon-wrapper sidebar-linkedin-icon"}><LinkedInIcon /></div>
-        <div className={"contact-icon-wrapper sidebar-github-icon"}><GitHubIcon /></div>
-        <div className={"contact-icon-wrapper sidebar-instagram-icon"}><InstagramIcon /></div>
-      </nav>
+      <div>
+        <h1>Contact Me</h1>
+        <nav className="contact-icon-container">
+          <div style={{fontSize: '2rem'}}><AssignmentIndIcon /></div>
+          <div className={"contact-icon-wrapper sidebar-email-icon"}><MailOutlineIcon /></div>
+          <div className={"contact-icon-wrapper sidebar-linkedin-icon"}><LinkedInIcon /></div>
+          <div className={"contact-icon-wrapper sidebar-github-icon"}><GitHubIcon /></div>
+          <div className={"contact-icon-wrapper sidebar-instagram-icon"}><InstagramIcon /></div>
+        </nav>
+      </div>
+      <div>
+        <p>I am interested in work at these locations</p>
+        <ul>
+          <li>San Fracisco Bay Area</li>
+          <li>Greater Los Angeles Area</li>
+          <li>Dallas, TX</li>
+          <li>Chicago, IL</li>
+        </ul>
+      </div>
+      <div></div>
     </div>
   );
 };
