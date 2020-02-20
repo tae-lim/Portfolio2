@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
       </div>
       <div>
         <p>I am interested in work at these locations</p>
-        <ul>
+        <ul className="cities-list">
           <li>San Fracisco Bay Area</li>
           <li>Greater Los Angeles Area</li>
           <li>Dallas, TX</li>

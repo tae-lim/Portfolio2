@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
@@ -11,22 +12,26 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-// interface Props {
-  
-// }
-
 const Sidebar: React.FC = props => {
-  const { view, setView } = props;
-  
   return (
     <div className="sidebar-container">
       <div className="logo-container">TL</div>
       <nav className="nav-container ">
-        <div className={"sidebar-icon"} onClick={() => {setView('home')}}><HomeIcon /></div>
-        <div className={"sidebar-icon sidebar-about-icon"} onClick={() => {setView('about')}}><FaceIcon /></div>
-        <div className={"sidebar-icon sidebar-skills-icon"} onClick={() => {setView('skills')}}><CodeIcon /></div>
-        <div className={"sidebar-icon sidebar-work-icon"} onClick={() => {setView('work')}}><WorkIcon /></div>
-        <div className={"sidebar-icon sidebar-contact-icon"} onClick={() => {setView('contact')}}><MailOutlineIcon /></div>
+        <Link to={'/'}>
+          <HomeIcon />
+        </Link>
+        <Link to={'/about'}>
+          <FaceIcon />
+        </Link>
+        <Link to={'/skills'}>
+          <CodeIcon />
+        </Link>
+        <Link to={'/work'}>
+          <WorkIcon />
+        </Link>
+        <Link to={'/contact'}>
+          <MailOutlineIcon />
+        </Link>
       </nav>
       <div className="sidebar-contact-container">
         <div className="empty-container"></div>

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Sidebar from './Sidebar';
 import Home from './Home';
@@ -8,8 +9,6 @@ import Contact from './Contact';
 import Skills from './Skills';
 
 const App: React.FC = () => {
-  const [view, setView] = React.useState('home');
-  let main;
 
   React.useEffect(() => {
     const script = document.createElement('script');
@@ -18,23 +17,17 @@ const App: React.FC = () => {
     document.body.appendChild(script);
   });
   
-  if (view === 'home') {
-    main = <Home />
-  } else if (view === 'about') {
-    main = <About />
-  } else if (view === 'work') {
-    main = <Work />
-  } else if (view === 'contact') {
-    main = <Contact />
-  } else if (view === 'skills') {
-    main = <Skills />
-  }
-
   return (
-    <div className="main-container">
-      <Sidebar view={view} setView={setView}/>
-      {main}
-    </div>
+    <Router>
+      <div className="main-container">
+        <Sidebar />
+        <Route exact path="/"><Home /></Route>
+        <Route path="/about"><About /></Route>
+        <Route path="/skills" component={Skills}></Route>
+        <Route path="/work" component={Work}></Route>
+        <Route path="/contact" component={Contact}></Route>
+      </div>
+    </Router>
   );
 };
 
