@@ -11,11 +11,19 @@ import WorkIcon from '@material-ui/icons/Work';
 import PersonIcon from '@material-ui/icons/Person';
 import GroupIcon from '@material-ui/icons/Group';
 
+import CookBukIcon from '../pics/cookbuk.png';
+import BackPackerIcon from '../pics/backpacker.png';
+import GreenwayIcon from '../pics/greenway.png';
+import VPSIcon from '../pics/vps.png';
+import PortolioIcon from '../pics/portfolio.png';
+
 const Work: React.FC = () => {
+
+  console.log('CookBukIcon', CookBukIcon);
   const cookBuk = {
     name: 'Cookbük',
     description: 'Recipe management services with OAuth and voice command navigation',
-    img: '',
+    img: CookBukIcon,
     url: 'https://bigredzone-cookbook.herokuapp.com/',
     github: 'https://github.com/tae-lim/CookBuk',
     feLanguages: 'HTML, CSS, JavaScript',
@@ -27,7 +35,7 @@ const Work: React.FC = () => {
   const backPacker = {
     name: 'BackPacker',
     description: 'Yosemite hiking guide with mobile and offline capabilities',
-    img: '',
+    img: BackPackerIcon,
     url: 'https://backpackergoonies.herokuapp.com/',
     github: 'https://github.com/tae-lim/BackPacker',
     feLanguages: 'HTML, CSS, JavaScript',
@@ -39,7 +47,7 @@ const Work: React.FC = () => {
   const greenway = {
     name: 'Greenway',
     description: 'Budget management software for tracking monthly user expenses, savings, and loans',
-    img: '',
+    img: GreenwayIcon,
     url: 'https://greenwaypay.herokuapp.com/',
     github: 'https://github.com/tae-lim/Greenway',
     feLanguages: 'HTML, CSS, JavaScript',
@@ -51,7 +59,7 @@ const Work: React.FC = () => {
   const vps = {
     name: 'Virtual Power Systems',
     description: 'Jr. Front End Developer | Milpitas, CA',
-    img: '',
+    img: VPSIcon,
     url: 'http://www.virtualpowersystems.com/',
     feLanguages: 'HTML, CSS, JavaScript',
     feFLT: 'React, React Router, Jest, Enzyme, Material-UI, SSE, styled components, Event-Driven Architecture',
@@ -60,7 +68,7 @@ const Work: React.FC = () => {
   const portfolio = {
     name: 'Portfolio',
     description: 'Personal Portfolio for showcasing work experience',
-    img: '',
+    img: PortolioIcon,
     url: 'http://www.taelim.dev',
     feLanguages: 'HTML, CSS, SASS, TypeScript',
     feFLT: 'React, React Router',

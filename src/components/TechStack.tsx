@@ -3,6 +3,8 @@ import * as React from 'react';
 const TechStack: React.FC = props => {
   const { appInfo } = props;
 
+  const [view, setView] = React.useState(false);
+
   const frontEnd = appInfo.feLanguages ? (
     <div className="tech-stack-info">
       <div className="stack-info-header">
@@ -35,12 +37,32 @@ const TechStack: React.FC = props => {
     </div>
   ) : '';
 
-
   const divider = appInfo.feLanguages && appInfo.beLanguages ? <span className="tech-stack-divider"></span> : ''; 
+
+  const currentView = view ? (
+    <div 
+      onMouseEnter={() => setView(true)} 
+      onMouseLeave={() => setView(false)} 
+      className="tech-stack-wrapper"
+    >
+      {frontEnd}
+      {divider}
+      {backEnd}
+    </div>
+  ) : (
+    <div 
+      onMouseEnter={() => setView(true)} 
+      onMouseLeave={() => setView(false)} 
+      className="tech-stack-wrapper"
+    >
+      <img src={appInfo.img} alt={appInfo.name} object-fit='contain'/>
+    </div>
+  );
 
   const url = appInfo.url ? <a className="app-info-link" href={appInfo.url} target="_blank">Website</a> : '';
   const github = appInfo.github ? <a className="app-info-link" href={appInfo.github} target="_blank">Github</a> : '';
 
+  console.log('view', view + appInfo.name);
   return (
     <div className="app-info-container">
       <div className="app-info-header">
@@ -48,11 +70,7 @@ const TechStack: React.FC = props => {
         <p>{appInfo.description}</p>
       </div>
       <div className="tech-stack-container">
-        <div className="tech-stack-wrapper">
-          {frontEnd}
-          {divider}
-          {backEnd}
-        </div>
+        {currentView}
         <div className="app-info-links">
           {url}
           {github}
