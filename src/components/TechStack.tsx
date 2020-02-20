@@ -38,44 +38,42 @@ const TechStack: React.FC = props => {
   ) : '';
 
   const divider = appInfo.feLanguages && appInfo.beLanguages ? <span className="tech-stack-divider"></span> : ''; 
+  const url = appInfo.url ? <a className="app-info-link" href={appInfo.url} target="_blank">Website</a> : '';
+  const github = appInfo.github ? <a className="app-info-link" href={appInfo.github} target="_blank">Github</a> : '';
 
   const currentView = view ? (
-    <div 
+    <div
+      className="tech-stack-container"
       onMouseEnter={() => setView(true)} 
       onMouseLeave={() => setView(false)} 
-      className="tech-stack-wrapper"
     >
-      {frontEnd}
-      {divider}
-      {backEnd}
+      <div className="tech-stack-wrapper">
+        {frontEnd}
+        {divider}
+        {backEnd}
+      </div>
+      <div className="app-info-links">
+        {url}
+        {github}
+      </div>
     </div>
   ) : (
-    <div 
+    <div
+      className="tech-stack-container"
       onMouseEnter={() => setView(true)} 
       onMouseLeave={() => setView(false)} 
-      className="tech-stack-wrapper"
     >
       <img src={appInfo.img} alt={appInfo.name} object-fit='contain'/>
     </div>
   );
 
-  const url = appInfo.url ? <a className="app-info-link" href={appInfo.url} target="_blank">Website</a> : '';
-  const github = appInfo.github ? <a className="app-info-link" href={appInfo.github} target="_blank">Github</a> : '';
-
-  console.log('view', view + appInfo.name);
   return (
     <div className="app-info-container">
       <div className="app-info-header">
         <h3 className="vertical-timeline-element-title">{appInfo.name}</h3>
         <p>{appInfo.description}</p>
       </div>
-      <div className="tech-stack-container">
         {currentView}
-        <div className="app-info-links">
-          {url}
-          {github}
-        </div>
-      </div>
     </div>
   );
 };
