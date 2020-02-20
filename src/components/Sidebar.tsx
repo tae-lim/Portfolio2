@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
+import SidebarIcon from './SidebarIcon';
+import * as ReactTransitionGroup from 'react-transition-group';
+
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
 import WorkIcon from '@material-ui/icons/Work';
@@ -17,21 +20,11 @@ const Sidebar: React.FC = props => {
     <div className="sidebar-container">
       <div className="logo-container">TL</div>
       <nav className="nav-container ">
-        <Link to={'/'}>
-          <HomeIcon />
-        </Link>
-        <Link to={'/about'}>
-          <FaceIcon />
-        </Link>
-        <Link to={'/skills'}>
-          <CodeIcon />
-        </Link>
-        <Link to={'/work'}>
-          <WorkIcon />
-        </Link>
-        <Link to={'/contact'}>
-          <MailOutlineIcon />
-        </Link>
+        <SidebarIcon Icon={HomeIcon} />
+        <SidebarIcon Icon={FaceIcon} />
+        <SidebarIcon Icon={WorkIcon} />
+        <SidebarIcon Icon={CodeIcon} />
+        <SidebarIcon Icon={MailOutlineIcon} />
       </nav>
       <div className="sidebar-contact-container">
         <div className="empty-container"></div>
