@@ -6,11 +6,11 @@ const Skills: React.FC = () => {
     const initTagCanvas = async () => {
       try {
         const options = {
-        textColour: '#ff0000',
-        outlineColour: '#ff00ff',
+        textColour: '#00acee',
+        outlineColour: 'white',
         reverse: true,
         initial: [0.1, -0.1],
-        maxSpeed: 0.03,
+        maxSpeed: 0.02,
         decel: 1
       };
         await TagCanvas.Start('myCanvas', '', options);
