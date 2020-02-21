@@ -291,24 +291,68 @@ a:visited {
   background-color: black; 
 }
 
-/* img {
-  object-fit: contain'
-} */
+.sidebar-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+}
 
-/* .sidebar-about-icon:hover {
-  border: 5px solid black;
-} */
-
-
-/* .alert-enter {
+.icon-enter {
   opacity: 0;
-  transform: translate3d(0,40px,0);
+}
+
+.icon-enter-active {
+  opacity: 1;
+  transform: scale(1.15);
+  transition: opacity 600ms transform 600ms;
+  text-transform: uppercase;
+}
+
+.icon-enter-done {
+  opacity: 1;
+  transform: scale(1.15);
+  text-transform: uppercase;
+}
+
+/* .icon-exit {
+  opacity: 1;
+}
+
+.icon-exit-active {
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+} */
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
 }
 .alert-enter-active {
   opacity: 1;
-  transform: translate3d(0,0,0);
-  transition: opacity 5000ms
-} */
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.icon-enter {
+  opacity: 0;
+}
+
+.icon-enter-active {
+  opacity: 1;
+  transition: opacity 600ms, transform 600ms;
+}
+
 
 @keyframes fadeInUp {
   from {

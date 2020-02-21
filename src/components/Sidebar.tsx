@@ -8,7 +8,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
 import WorkIcon from '@material-ui/icons/Work';
 import CodeIcon from '@material-ui/icons/Code';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import CallIcon from '@material-ui/icons/Call';
 
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -24,7 +24,7 @@ const Sidebar: React.FC = props => {
         <SidebarIcon Icon={FaceIcon} />
         <SidebarIcon Icon={WorkIcon} />
         <SidebarIcon Icon={CodeIcon} />
-        <SidebarIcon Icon={MailOutlineIcon} />
+        <SidebarIcon Icon={CallIcon} />
       </nav>
       <div className="sidebar-contact-container">
         <div className="empty-container"></div>
