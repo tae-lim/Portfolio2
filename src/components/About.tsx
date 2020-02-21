@@ -1,5 +1,7 @@
 import * as React from 'react';
-import NET from 'vanta/dist/vanta.net.min';
+
+import { Link } from 'react-router-dom';
+import FOG from 'vanta/dist/vanta.fog.min';
 import * as THREE from 'three';
 import PolygonMask from './PolygonMask';
 
@@ -9,9 +11,19 @@ const About: React.FC = () => {
 
   React.useEffect(() => {
     if (!vantaEffect) {
-      setVantaEffect(NET({
+      setVantaEffect(FOG({
         el: myRef.current,
-        THREE: THREE
+        THREE: THREE,
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: '#01539D',
+        midtoneColor: '#86b3d2',
+        lowlightColor: '#86a2b9',
+        baseColor: '#c0cacf',
+        speed: 1.20,
+        zoom: 2.60
       }));
     }
     return () => {
@@ -34,7 +46,7 @@ const About: React.FC = () => {
         <div className="about-section">
           <p>I take deep personal satisfaction in being stimulated from challenging problems and thrive in open-communication environments where autonomy is a valued and teamwork is a given.</p>
           <p>I am always learning new languages, technologies, and methodologies to further improve my engineering and communication capabilities.</p>
-          <p>When I was developing this web application, I wanted to use a stack I've never used before. Check out further details here!</p>
+          <p>When I was developing this web application, I wanted to use a stack I've never used before. Check out further details <Link to="/work">here!</Link></p>
         </div>
       </div>
     </div>

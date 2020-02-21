@@ -3,8 +3,6 @@ import WAVES from 'vanta/dist/vanta.waves.min';
 import * as THREE from 'three';
 //import * as ReactTransitionGroup from 'react-transition-group';
 
-const duration = 8000;
-
 const Home: React.FC = () => {
   const [vantaEffect, setVantaEffect] = React.useState(0);
   const myRef = React.useRef(null);
@@ -13,7 +11,17 @@ const Home: React.FC = () => {
     if (!vantaEffect) {
       setVantaEffect(WAVES({
         el: myRef.current,
-        THREE: THREE
+        THREE: THREE,
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: '#1a478c',
+        shininess: 16.00,
+        waveHeight: 8.00,
+        zoom: 1.38,
       }));
     }
     return () => {

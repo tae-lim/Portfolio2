@@ -1,19 +1,22 @@
 body {
   font-family: circular, 'segoe ui', sans-serif;
   margin: 0;
+  background: '#1a478c';
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
   letter-spacing: -2px;
   color: white;
+  margin-bottom: 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   color: white;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -42,6 +45,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .main-container {
@@ -57,6 +61,8 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   border-right: 1px solid black;
+  background: #00539CFF;
+  color: white;
 }
 
 .logo-container {
@@ -305,6 +311,7 @@ a:visited {
   align-items: center;
   height: 2.5rem;
   width: 2.5rem;
+  color: white;
 }
 
 .icon-enter {
