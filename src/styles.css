@@ -36,6 +36,14 @@ p {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .main-container {
   height: 100vh;
   display: flex;
@@ -305,54 +313,12 @@ a:visited {
 
 .icon-enter-active {
   opacity: 1;
-  transform: scale(1.15);
-  transition: opacity 600ms transform 600ms;
-  text-transform: uppercase;
+  transition: opacity 700ms;
 }
 
 .icon-enter-done {
   opacity: 1;
-  transform: scale(1.15);
-  text-transform: uppercase;
 }
-
-/* .icon-exit {
-  opacity: 1;
-}
-
-.icon-exit-active {
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-} */
-
-.alert-enter {
-  opacity: 0;
-  transform: scale(0.9);
-}
-.alert-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
-}
-.alert-exit {
-  opacity: 1;
-
-}
-.alert-exit-active {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
-}
-
-.icon-enter {
-  opacity: 0;
-}
-
-.icon-enter-active {
-  opacity: 1;
-  transition: opacity 600ms, transform 600ms;
-}
-
 
 @keyframes fadeInUp {
   from {

@@ -42,7 +42,7 @@ const SidebarIcon: React.FC = props => {
     <ReactTransitionGroup.CSSTransition
       in={isHovered}
       classNames="icon"
-      timeout={600}
+      timeout={700}
     >
       <span key={text}>{text}</span>
     </ReactTransitionGroup.CSSTransition>
@@ -50,7 +50,7 @@ const SidebarIcon: React.FC = props => {
     <ReactTransitionGroup.CSSTransition
       in={isHovered}
       classNames="icon"
-      timeout={600}
+      timeout={700}
     >
       <Icon key={link}/>
     </ReactTransitionGroup.CSSTransition>
