@@ -1,12 +1,11 @@
-import * as React from 'react';
-import GLOBE from 'vanta/dist/vanta.globe.min';
-import * as THREE from 'three';
-
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import * as React from 'react';
+import * as THREE from 'three';
+import GLOBE from 'vanta/dist/vanta.globe.min';
 
 const Contact: React.FC = () => {
   const [vantaEffect, setVantaEffect] = React.useState(0);
@@ -16,7 +15,16 @@ const Contact: React.FC = () => {
     if (!vantaEffect) {
       setVantaEffect(GLOBE({
         el: myRef.current,
-        THREE: THREE
+        THREE: THREE,
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        size: 0.80,
+        color: '#0569FF',
+        backgroundColor: '#00315c'
       }));
     }
     return () => {
@@ -29,11 +37,21 @@ const Contact: React.FC = () => {
       <div>
         <h1>Contact Me</h1>
         <nav className="contact-icon-container">
-          <div style={{fontSize: '2rem'}}><AssignmentIndIcon /></div>
-          <div className={"contact-icon-wrapper sidebar-email-icon"}><MailOutlineIcon /></div>
-          <div className={"contact-icon-wrapper sidebar-linkedin-icon"}><LinkedInIcon /></div>
-          <div className={"contact-icon-wrapper sidebar-github-icon"}><GitHubIcon /></div>
-          <div className={"contact-icon-wrapper sidebar-instagram-icon"}><InstagramIcon /></div>
+          <a className="contact-icon-wrapper" href="https://www.google.com" target="_blank">
+            <AssignmentIndIcon />
+          </a>
+          <a className="contact-icon-wrapper" href="mailto:taelim92@gmail.com" target="_blank">
+            <MailOutlineIcon />
+          </a>
+          <a className="contact-icon-wrapper" href="https://www.linkedin.com/in/tae-lim/" target="_blank">
+            <LinkedInIcon />
+          </a>
+          <a className="contact-icon-wrapper" href="https://github.com/tae-lim" target="_blank">
+            <GitHubIcon />
+          </a>
+          <a className="contact-icon-wrapper" href="https://www.instagram.com/taestybits/" target="_blank">
+            <InstagramIcon />
+          </a>
         </nav>
       </div>
       <div>
@@ -42,6 +60,7 @@ const Contact: React.FC = () => {
           <li>San Fracisco Bay Area</li>
           <li>Greater Los Angeles Area</li>
           <li>Dallas, TX</li>
+          <li>New York, NY</li>
           <li>Chicago, IL</li>
         </ul>
       </div>
