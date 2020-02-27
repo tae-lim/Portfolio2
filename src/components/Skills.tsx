@@ -28,14 +28,13 @@ const Skills: React.FC = () => {
         <div className="skills-info-container">
           <h1>Skills</h1>
           <div className="skills-info">
-            <p>These are technologies I've worked with to develop applications, implement features, and debug code.</p>
-            <p>There are other frameworks, libraries, and tools I haven't worked with in a while such as jQuery, AngularJS, and Backbone.</p>
-            <p>I have plans for the <span>hopefully</span> near future for learning Python + Django, GraphQL, and Redis.</p>
+            <p>These are technologies I've worked with to develop applications, implement features, and debug code</p>
+            <p>I am currently working towards learning Typescript, Python/Django, and GraphQL</p>
           </div>
         </div>
 
         <div id="myCanvasContainer">
-          <canvas width="600" height="500" id="myCanvas">
+          <canvas width="500" height="400" id="myCanvas">
             <p>Anything in here will be replaced on browsers that support the canvas element</p>
             <ul>
               <li id="tag1"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5</a></li>
