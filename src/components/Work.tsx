@@ -19,7 +19,6 @@ import PortolioIcon from '../pics/portfolio.png';
 
 const Work: React.FC = () => {
 
-  console.log('CookBukIcon', CookBukIcon);
   const cookBuk = {
     name: 'Cookbük',
     description: 'Recipe management services with OAuth and voice command navigation',
@@ -84,55 +83,55 @@ const Work: React.FC = () => {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            contentStyle={{ background: '#00539CFF', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid #00539CFF' }}
             date="2020 - present"
             icon={<PersonIcon />}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            iconStyle={{ background: '#00539CFF', color: '#fff' }}
           >
             <TechStack appInfo={portfolio} />
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            contentStyle={{ background: '#00539CFF', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #00539CFF' }}
             date="2019 - present"
             icon={<WorkIcon />}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            iconStyle={{ background: '#00539CFF', color: '#fff' }}
           >
             <TechStack appInfo={vps} />
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            contentStyle={{ background: '#00539CFF', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid #00539CFF' }}
             date="2018 - 2019"
             icon={<GroupIcon />}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            iconStyle={{ background: '#00539CFF', color: '#fff' }}
           >
             <TechStack appInfo={greenway}/>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            contentStyle={{ background: '#00539CFF', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid #00539CFF' }}
             date="2018 - 2019"
             icon={<GroupIcon />}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            iconStyle={{ background: '#00539CFF', color: '#fff' }}
           >
             <TechStack appInfo={backPacker}/>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            contentStyle={{ background: '#00539CFF', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid #00539CFF' }}
             date="2018 - 2019"
             icon={<GroupIcon />}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            iconStyle={{ background: '#00539CFF', color: '#fff' }}
           >
             <TechStack appInfo={cookBuk}/>
           </VerticalTimelineElement>
