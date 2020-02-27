@@ -11,9 +11,10 @@ import CodeIcon from '@material-ui/icons/Code';
 import CallIcon from '@material-ui/icons/Call';
 
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 const Sidebar: React.FC = props => {
   return (
@@ -22,17 +23,28 @@ const Sidebar: React.FC = props => {
       <nav className="nav-container ">
         <SidebarIcon Icon={HomeIcon} />
         <SidebarIcon Icon={FaceIcon} />
-        <SidebarIcon Icon={WorkIcon} />
         <SidebarIcon Icon={CodeIcon} />
+        <SidebarIcon Icon={WorkIcon} />
         <SidebarIcon Icon={CallIcon} />
       </nav>
       <div className="sidebar-contact-container">
         <div className="empty-container"></div>
         <nav className="sidebar-contact-wrapper">
-          <div className={"sidebar-icon sidebar-assignment-icon"}><AssignmentIndIcon /></div>
-          <div className={"sidebar-icon sidebar-linkedin-icon"}><LinkedInIcon /></div>
-          <div className={"sidebar-icon sidebar-github-icon"}><GitHubIcon /></div>
-          <div className={"sidebar-icon sidebar-instagram-icon"}><InstagramIcon /></div>
+          <a className="contact-icon-container" href="https://www.google.com" target="_blank">
+            <AssignmentIndIcon />
+          </a>
+          <a className="contact-icon-container" href="mailto:taelim92@gmail.com" target="_blank">
+            <MailOutlineIcon />
+          </a>
+          <a className="contact-icon-container" href="https://www.linkedin.com/in/tae-lim/" target="_blank">
+            <LinkedInIcon />
+          </a>
+          <a className="contact-icon-container" href="https://github.com/tae-lim" target="_blank">
+            <GitHubIcon />
+          </a>
+          <a className="contact-icon-container" href="https://www.instagram.com/taestybits/" target="_blank">
+            <InstagramIcon />
+          </a>
         </nav>
       </div>
     </div>

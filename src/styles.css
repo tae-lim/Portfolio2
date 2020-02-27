@@ -1,14 +1,14 @@
 body {
   font-family: circular, 'segoe ui', sans-serif;
   margin: 0;
-  background: '#1a478c';
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
   letter-spacing: -2px;
   color: white;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -16,6 +16,7 @@ h2 {
   font-size: 2rem;
   font-weight: 400;
   color: white;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -41,12 +42,14 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
 
 .main-container {
   height: 100vh;
@@ -55,20 +58,25 @@ a:hover {
 
 .sidebar-container {
   display: flex;
+  position: fixed;
   width: 5rem;
   min-width: 5rem;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
   border-right: 1px solid black;
-  background: #00539CFF;
+  background: #00539c;
   color: white;
+  z-index: 2;
 }
 
 .logo-container {
   height: 33.33%;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .nav-container {
@@ -86,12 +94,12 @@ a:hover {
 }
 
 .empty-container {
-  height: 50%;
+  height: 25%;
 }
 
 .sidebar-contact-wrapper {
   display: flex;
-  height: 50%;
+  height: 75%;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -104,6 +112,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   padding-left: 5rem;
+  margin-left: 5rem;
 }
 
 .about-container {
@@ -114,6 +123,7 @@ a:hover {
   justify-content: center;
   padding-left: 5rem;
   padding-right: 5rem;
+  margin-left: 5rem;
 }
 
 .about-section-container {
@@ -231,6 +241,7 @@ a:visited {
   display: flex;
   height: 100%;
   width: 100%;
+  margin-left: 5rem;
 }
 
 .skills-wrapper {
@@ -238,7 +249,7 @@ a:visited {
   padding-left: 5rem;
   padding-right: 5rem;
   width: 100%;
-  align-self: center;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -247,6 +258,8 @@ a:visited {
   width: 33.33%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
 }
 
 .skills-info {
@@ -279,11 +292,16 @@ a:visited {
   align-items: center;
 }
 
+.vertical-timeline-element-content {
+  box-shadow: 0 3px 0 white;
+}
+
 .contact-container {
   display: flex;
   height: 100%;
   width: 100%;
   padding-left: 5rem;
+  margin-left: 5rem;
   flex-direction: column;
   justify-content: center;
 }
@@ -294,6 +312,42 @@ a:visited {
   justify-content: space-between;
 }
 
+.contact-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  transform: scale(1.25);
+}
+
+.contact-icon-wrapper svg:hover {
+  color: wheat;
+}
+
+.contact-icon-nav {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  color: white;
+  transform: scale(1.2);
+  margin-top: 2rem;
+}
+
+
+
+.contain-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: white;
+}
+
+.contain-icon-container svg:hover {
+  color: wheat;
+}
 
 .particle-canvas {
   position: fixed;
@@ -305,11 +359,11 @@ a:visited {
 }
 
 .simple-particles {
-  background: dodgerblue;
+  background: #193389;
 }
 
 .bubbles-particles {
-  background: #232741;
+  background: #00182e;
 }
 
 .sidebar-icon-container {
@@ -319,6 +373,10 @@ a:visited {
   height: 2.5rem;
   width: 2.5rem;
   color: white;
+}
+
+.sidebar-icon-container svg {
+  transform: scale(1.25);
 }
 
 .icon-enter {
