@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
 
   return (
     <div className="contact-container" ref={myRef}>
-      <div>
+      <div className="contact-me-container">
         <h1>Contact Me</h1>
         <nav className="contact-icon-container">
           <a className="contact-icon-wrapper" href="https://www.google.com" target="_blank">
@@ -54,9 +54,9 @@ const Contact: React.FC = () => {
           </a>
         </nav>
       </div>
-      <div>
+      <div className="locations-container">
         <p>I am interested in work at these locations</p>
-        <ul className="cities-list">
+        <ul className="locations-list">
           <li>San Fracisco Bay Area</li>
           <li>Greater Los Angeles Area</li>
           <li>Dallas, TX</li>
@@ -64,7 +64,6 @@ const Contact: React.FC = () => {
           <li>Chicago, IL</li>
         </ul>
       </div>
-      <div></div>
     </div>
   );
 };
