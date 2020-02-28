@@ -11,11 +11,15 @@ import Skills from './Skills';
 const App: React.FC = () => {
 
   React.useEffect(() => {
+    injectScript('https://www.goat1000.com/tagcanvas.js');
+  });
+
+  const injectScript = url => {
     const script = document.createElement('script');
-    script.src = 'https://www.goat1000.com/tagcanvas.js';
+    script.src = url;
     script.async = true;
     document.body.appendChild(script);
-  });
+  }
   
   return (
     <Router>
