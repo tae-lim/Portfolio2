@@ -1,9 +1,12 @@
 import * as React from 'react';
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 const TechStack: React.FC = props => {
   const { appInfo } = props;
 
   const [view, setView] = React.useState(false);
+
+  console.log('appInfo', appInfo);
 
   const frontEnd = appInfo.feLanguages ? (
     <div className="tech-stack-info">
@@ -44,6 +47,7 @@ const TechStack: React.FC = props => {
   const currentView = view ? (
     <div
       className="tech-stack-container"
+      key={`${appInfo.name}-info`}
       onMouseEnter={() => setView(true)} 
       onMouseLeave={() => setView(false)} 
     >
@@ -60,6 +64,7 @@ const TechStack: React.FC = props => {
   ) : (
     <div
       className="tech-stack-container"
+      key={`${appInfo.name}-image`}
       onMouseEnter={() => setView(true)} 
       onMouseLeave={() => setView(false)} 
     >
@@ -73,7 +78,14 @@ const TechStack: React.FC = props => {
         <h3 className="vertical-timeline-element-title">{appInfo.name}</h3>
         <p>{appInfo.description}</p>
       </div>
-        {currentView}
+      <ReactCSSTransitionReplace 
+        transitionName="cross-fade"
+        transitionEnterTimeout={500} 
+        transitionLeaveTimeout={500}
+      >
+      {currentView}
+    </ReactCSSTransitionReplace>
+        
     </div>
   );
 };

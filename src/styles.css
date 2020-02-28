@@ -136,6 +136,9 @@ a:hover {
   flex-direction: column;
   width: 33.33%;
   min-width: 20rem;
+  border: 0.25rem solid wheat;
+  padding: 2rem;
+  border-radius: 2%
 }
 
 .app-info-container {
@@ -296,6 +299,26 @@ a:visited {
   box-shadow: 0 3px 0 white;
 }
 
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.cross-fade-height {
+  transition: height 0.5s ease-out;
+}
+
 .contact-container {
   display: flex;
   height: 100%;
@@ -322,7 +345,7 @@ a:visited {
 }
 
 .contact-icon-wrapper svg:hover {
-  color: wheat;
+  color: burlywood;
 }
 
 .contact-icon-nav {

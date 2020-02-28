@@ -19,7 +19,7 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 const Sidebar: React.FC = props => {
   return (
     <div className="sidebar-container">
-      <div className="logo-container">TL</div>
+      <div className="logo-container"><Link to="/">TL</Link></div>
       <nav className="nav-container ">
         <SidebarIcon Icon={HomeIcon} />
         <SidebarIcon Icon={FaceIcon} />
