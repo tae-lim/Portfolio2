@@ -6,14 +6,16 @@ const config = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
         template: require('html-webpack-template'),
         inject: false,
         appMountId: 'app',
-        filename: 'index.html'
+        filename: 'index.html',
+        title: 'Tae Lim'
       })
   ],
   module: {
@@ -52,6 +54,9 @@ const config = {
         ]
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true
   },
   resolve: {
     extensions: [
