@@ -34,7 +34,7 @@ const Skills: React.FC = () => {
         </div>
 
         <div id="myCanvasContainer">
-          <canvas className="animated animatedFadeDown fadeInDown" width="500" height="400" id="myCanvas">
+          <canvas className="animated animatedFadeLeft fadeInLeft" width="500" height="400" id="myCanvas">
             <p>Anything in here will be replaced on browsers that support the canvas element</p>
             <ul>
               <li id="tag1"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5</a></li>
