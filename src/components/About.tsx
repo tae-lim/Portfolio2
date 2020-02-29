@@ -1,9 +1,7 @@
 import * as React from 'react';
-
-import { Link } from 'react-router-dom';
+import TaeIcon from '../pics/tae.png';
 import FOG from 'vanta/dist/vanta.fog.min';
 import * as THREE from 'three';
-import PolygonMask from './PolygonMask';
 
 const About: React.FC = () => {
   const [vantaEffect, setVantaEffect] = React.useState(0);
@@ -39,14 +37,12 @@ const About: React.FC = () => {
       </div>
       <div className="about-section-container">
         <div className="about-section">
-          <p>My name is Tae and I've always had an enthusiasm for technology growing up in Silicon Valley.</p>
-          <p>I built my first desktop in middle school, took Java in high school, and built cryptocurrency mining rigs during undergrad.</p>
-          <p>Programming was only a hobby in lieu of other interests, but I began taking it seriously in 2018.</p>
+          <p>My name is Tae and I've always had an enthusiasm for technology growing up in Silicon Valley</p>
+          <p>I'm consistently learning new languages, technologies, and methodologies to further improve my engineering and communication capabilities</p>
+          <p>Solving challenging problems in open-communication environments where autonomy is valued and teamwork is a given are my forte!</p>
         </div>
         <div className="about-section">
-          <p>I take deep personal satisfaction in being stimulated from challenging problems and thrive in open-communication environments where autonomy is a valued and teamwork is a given.</p>
-          <p>I am always learning new languages, technologies, and methodologies to further improve my engineering and communication capabilities.</p>
-          <p>When I was developing this web application, I wanted to use a stack I've never used before. Check out further details <Link to="/work">here!</Link></p>
+          <img src={TaeIcon} alt="Tae Lim"/>
         </div>
       </div>
     </div>

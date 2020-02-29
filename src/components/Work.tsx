@@ -69,10 +69,10 @@ const Work: React.FC = () => {
     description: 'Personal Portfolio for showcasing work experience',
     img: PortolioIcon,
     url: 'http://www.taelim.dev',
-    feLanguages: 'HTML, CSS, SASS, TypeScript',
+    feLanguages: 'HTML, CSS, TypeScript',
     feFLT: 'React, React Router',
-    beLanguages: 'Python',
-    beFLT: 'Flask, AWS/EC2'
+    beLanguages: 'JavaScript',
+    beFLT: 'Node, Express'
   };
 
   return (

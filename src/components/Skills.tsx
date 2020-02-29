@@ -41,10 +41,10 @@ const Skills: React.FC = () => {
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS3</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a></li>
               <li><a href="https://www.typescriptlang.org/" target="_blank">Typescript</a></li>
-              <li><a href="https://reactjs.org/" target="_blank">React</a></li>
-              <li><a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">Hooks</a></li>
               <li><a href="https://redux.js.org/" target="_blank">Redux</a></li>
+              <li><a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">Hooks</a></li>
               <li><a href="https://material-ui.com/" target="_blank">Material-UI</a></li>
+              <li><a href="https://reactjs.org/" target="_blank">React</a></li>
               <li><a href="https://styled-components.com/" target="_blank">styled components</a></li>
               <li><a href="https://www.python.org/" target="_blank">Python</a></li>
               <li><a href="https://nodejs.org/en/" target="_blank">Node</a></li>

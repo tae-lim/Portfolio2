@@ -27,26 +27,11 @@ const Sidebar: React.FC = props => {
         <SidebarIcon Icon={WorkIcon} />
         <SidebarIcon Icon={CallIcon} />
       </nav>
-      <div className="sidebar-contact-container">
-        <div className="empty-container"></div>
-        <nav className="sidebar-contact-wrapper">
-          <a className="contact-icon-container" href="https://www.google.com" target="_blank">
-            <AssignmentIndIcon />
-          </a>
-          <a className="contact-icon-container" href="mailto:taelim92@gmail.com" target="_blank">
-            <MailOutlineIcon />
-          </a>
-          <a className="contact-icon-container" href="https://www.linkedin.com/in/tae-lim/" target="_blank">
-            <LinkedInIcon />
-          </a>
-          <a className="contact-icon-container" href="https://github.com/tae-lim" target="_blank">
-            <GitHubIcon />
-          </a>
-          <a className="contact-icon-container" href="https://www.instagram.com/taestybits/" target="_blank">
-            <InstagramIcon />
-          </a>
-        </nav>
-      </div>
+      <nav className="sidebar-contact-container">
+        <a className="resume-icon-wrapper" href="https://www.google.com" target="_blank">
+          <AssignmentIndIcon />
+        </a>
+      </nav>
     </div>
   );
 };
