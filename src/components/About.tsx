@@ -41,7 +41,7 @@ const About: React.FC = () => {
           <p>I'm consistently learning new languages, technologies, and methodologies to further improve my engineering and communication capabilities</p>
           <p>Solving challenging problems in open-communication environments where autonomy is valued and teamwork is a given are my forte!</p>
         </div>
-        <div className="about-section">
+        <div className="about-section animated animatedFadeLeft fadeInLeft">
           <img className="animated animatedFadeLeft fadeInLeft" src={TaeIcon} alt="Tae Lim"/>
         </div>
       </div>
