@@ -6,8 +6,6 @@ const TechStack: React.FC = props => {
 
   const [view, setView] = React.useState(false);
 
-  console.log('appInfo', appInfo);
-
   const frontEnd = appInfo.feLanguages ? (
     <div className="tech-stack-info">
       <div className="stack-info-header">
@@ -83,9 +81,8 @@ const TechStack: React.FC = props => {
         transitionEnterTimeout={500} 
         transitionLeaveTimeout={500}
       >
-      {currentView}
-    </ReactCSSTransitionReplace>
-        
+        {currentView}
+      </ReactCSSTransitionReplace>
     </div>
   );
 };
