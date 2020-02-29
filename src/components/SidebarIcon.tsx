@@ -39,27 +39,21 @@ const SidebarIcon: React.FC = props => {
   const link = mapIconName(Icon.displayName, 'link');
 
   const view = isHovered ? (
-    <ReactTransitionGroup.CSSTransition
-      in={isHovered}
-      classNames="icon"
-      timeout={700}
-    >
-      <span key={text}>{text}</span>
-    </ReactTransitionGroup.CSSTransition>
+    <span key={text}>{text}</span>
   ) : (
-    <ReactTransitionGroup.CSSTransition
-      in={isHovered}
-      classNames="icon"
-      timeout={700}
-    >
-      <Icon key={link}/>
-    </ReactTransitionGroup.CSSTransition>
+    <Icon key={link}/>
   );
 
   return (
     <Link to={link}>
       <div className='sidebar-icon-container' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-        {view}
+        <ReactTransitionGroup.CSSTransition
+          in={isHovered}
+          classNames="icon"
+          timeout={700}
+        >
+          {view}
+        </ReactTransitionGroup.CSSTransition>
       </div>
     </Link>
   );
