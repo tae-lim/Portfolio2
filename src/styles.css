@@ -119,8 +119,6 @@ a:hover {
   margin-left: 5rem;
 }
 
-.about-intro {}
-
 .sidebar-contact-container svg {
   transform: scale(1.25);
 }
@@ -433,11 +431,6 @@ a:visited {
   opacity: 1;
 }
 
-
-
-
-
-
 @keyframes fadeInUp {
   from {
     transform: translate3d(0,40px,0)
@@ -528,6 +521,13 @@ a:visited {
 
 .animated {
   animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animated-slow {
+  animation-duration: 3s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: both

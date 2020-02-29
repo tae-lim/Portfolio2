@@ -31,45 +31,12 @@ const Home: React.FC = () => {
 
   return (
     <div className="home-container" ref={myRef}>
-      <h1 className="animated animatedFadeIn fadeInUp">Hi,</h1>
-      <h1 className="animated animatedFadeIn fadeInUp">I'm Tae Lim</h1>
-      <h2 className="animated animatedFadeIn fadeInUp">Software Developer</h2>
-      <h4 className="animated animatedFadeIn fadeInUp">Frontend / Backend / Fullstack</h4>
+      <h1 className="animated-slow animatedFadeIn fadeInUp">Hi,</h1>
+      <h1 className="animated-slow animatedFadeIn fadeInUp">I'm Tae Lim</h1>
+      <h2 className="animated-slow animatedFadeIn fadeInUp">Software Developer</h2>
+      <h4 className="animated-slow animatedFadeIn fadeInUp">Frontend / Backend / Fullstack</h4>
     </div>
   );
 }
 
 export default Home;
-
-
-// const [nameIntro, setNameIntro] = React.useState(false);
-// const [swDevIntro, setSwDevIntro] = React.useState(false);
-// const [occupationsIntro, setOccupationsIntro] = React.useState(false);
-
-// React.useEffect(() => {
-//   setNameIntro(true);
-//   setSwDevIntro(true);
-//   setOccupationsIntro(true);
-// });
-
-/* <ReactTransitionGroup.CSSTransition 
-  in={nameIntro} 
-  timeout={duration}
-  classNames="alert"
->
-
-</ReactTransitionGroup.CSSTransition>
-<ReactTransitionGroup.CSSTransition 
-  in={swDevIntro} 
-  timeout={12000}
-  classNames="alert"
->
-
-</ReactTransitionGroup.CSSTransition>
-<ReactTransitionGroup.CSSTransition 
-  in={occupationsIntro} 
-  timeout={18000}
-  classNames="alert"
->
-
-</ReactTransitionGroup.CSSTransition> */
