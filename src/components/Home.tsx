@@ -31,10 +31,10 @@ const Home: React.FC = () => {
 
   return (
     <div className="home-container" ref={myRef}>
-      <h1 className="animated animatedFadeInUp fadeInUp">Hi,</h1>
-      <h1 className="animated animatedFadeInUp fadeInUp">I'm Tae Lim</h1>
-      <h2 className="animated animatedFadeInUp fadeInUp">Software Developer</h2>
-      <h4 className="animated animatedFadeInUp fadeInUp">Frontend / Backend / Fullstack</h4>
+      <h1 className="animated animatedFadeIn fadeInUp">Hi,</h1>
+      <h1 className="animated animatedFadeIn fadeInUp">I'm Tae Lim</h1>
+      <h2 className="animated animatedFadeIn fadeInUp">Software Developer</h2>
+      <h4 className="animated animatedFadeIn fadeInUp">Frontend / Backend / Fullstack</h4>
     </div>
   );
 }

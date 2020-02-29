@@ -35,8 +35,8 @@ const Contact: React.FC = () => {
   return (
     <div className="contact-container" ref={myRef}>
       <div className="contact-me-container">
-        <h1>Contact Me</h1>
-        <nav className="contact-icon-container">
+        <h1 className="animated animatedFadeDown fadeInDown">Contact Me</h1>
+        <nav className="contact-icon-container animated animatedFadeDown fadeInDown">
           <a className="contact-icon-wrapper" href="https://www.google.com" target="_blank">
             <AssignmentIndIcon />
           </a>
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
           </a>
         </nav>
       </div>
-      <div className="locations-container">
+      <div className="locations-container animated animatedFadeInUp fadeInUp">
         <p>I am interested in work at these locations</p>
         <ul className="locations-list">
           <li>San Fracisco Bay Area</li>

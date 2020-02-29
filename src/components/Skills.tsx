@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
     <div className="skills-container">
       <BubblesParticles />
       <div className="skills-wrapper">
-        <div className="skills-info-container">
+        <div className="skills-info-container animated animatedFadeRight fadeInRight">
           <h1>Skills</h1>
           <div className="skills-info">
             <p>These are technologies I've worked with to develop applications, implement features, and debug code</p>
@@ -34,7 +34,7 @@ const Skills: React.FC = () => {
         </div>
 
         <div id="myCanvasContainer">
-          <canvas width="500" height="400" id="myCanvas">
+          <canvas className="animated animatedFadeDown fadeInDown" width="500" height="400" id="myCanvas">
             <p>Anything in here will be replaced on browsers that support the canvas element</p>
             <ul>
               <li id="tag1"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5</a></li>

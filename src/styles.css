@@ -119,6 +119,8 @@ a:hover {
   margin-left: 5rem;
 }
 
+.about-intro {}
+
 .sidebar-contact-container svg {
   transform: scale(1.25);
 }
@@ -431,6 +433,11 @@ a:visited {
   opacity: 1;
 }
 
+
+
+
+
+
 @keyframes fadeInUp {
   from {
     transform: translate3d(0,40px,0)
@@ -453,6 +460,72 @@ a:visited {
   }
 }
 
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0,-40px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    transform: translate3d(0,-40px,0);
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translate3d(40px,0,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    transform: translate3d(40px,0,0);
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translate3d(-40px,0,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    transform: translate3d(-40px,0,0);
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
 .animated {
   animation-duration: 3s;
   animation-fill-mode: both;
@@ -460,7 +533,7 @@ a:visited {
   -webkit-animation-fill-mode: both
 }
 
-.animatedFadeInUp {
+.animatedFadeIn {
   opacity: 0
 }
 
@@ -468,4 +541,22 @@ a:visited {
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
+}
+
+.fadeInDown {
+  opacity: 0;
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+}
+
+.fadeInLeft {
+  opacity: 0;
+  animation-name: fadeInLeft;
+  -webkit-animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+  opacity: 0;
+  animation-name: fadeInRight;
+  -webkit-animation-name: fadeInRight;
 }

@@ -31,18 +31,18 @@ const About: React.FC = () => {
 
   return (
     <div className="about-container" ref={myRef}>
-      <div className="about-intro">
+      <div className="animated animatedFadeDown fadeInDown">
         <h1>Welcome,</h1>
         <h1>I'm glad you're here!</h1>
       </div>
-      <div className="about-section-container">
+      <div className="about-section-container animated animatedFadeRight fadeInRight">
         <div className="about-section">
           <p>My name is Tae and I've always had an enthusiasm for technology growing up in Silicon Valley</p>
           <p>I'm consistently learning new languages, technologies, and methodologies to further improve my engineering and communication capabilities</p>
           <p>Solving challenging problems in open-communication environments where autonomy is valued and teamwork is a given are my forte!</p>
         </div>
         <div className="about-section">
-          <img src={TaeIcon} alt="Tae Lim"/>
+          <img className="animated animatedFadeLeft fadeInLeft" src={TaeIcon} alt="Tae Lim"/>
         </div>
       </div>
     </div>
