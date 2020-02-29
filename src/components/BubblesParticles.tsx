@@ -41,17 +41,17 @@ class BubblesParticles extends React.Component {
                 "random": true,
                 "anim": {
                   "enable": true,
-                  "speed": 1,
+                  "speed": 0.75,
                   "opacity_min": 0,
                   "sync": false
                 }
               },
               "size": {
-                "value": 4,
+                "value": 3,
                 "random": true,
                 "anim": {
                   "enable": false,
-                  "speed": 4,
+                  "speed": 3,
                   "size_min": 0.3,
                   "sync": false
                 }
