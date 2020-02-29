@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
           </a>
         </nav>
       </div>
-      <div className="locations-container animated animatedFadeInUp fadeInUp">
+      <div className="locations-container animated animatedFadeUp fadeInUp">
         <p>I am interested in work at these locations</p>
         <ul className="locations-list">
           <li>San Fracisco Bay Area</li>
