@@ -10,23 +10,33 @@ const SidebarIcon: React.FC = props => {
   const iconProps = {
     HomeIcon: {
       link: '/',
-      text: 'Home'
+      text: 'Home',
+      isExternalLink: false,
     },
     FaceIcon: {
       link: '/about',
       text: 'About',
+      isExternalLink: false
     },
     WorkIcon: {
       link: '/work',
-      text: 'Work'
+      text: 'Work',
+      isExternalLink: false
     },
     CodeIcon: {
       link: '/skills',
-      text: 'Skills'
+      text: 'Skills',
+      isExternalLink: false
     },
     CallIcon: {
       link: '/contact',
-      text: 'Contact'
+      text: 'Contact',
+      isExternalLink: false
+    },
+    AssignmentIndIcon: {
+      link: 'https://www.google.com',
+      text: 'Resume',
+      isExternalLink: true
     }
   };
 
@@ -44,7 +54,17 @@ const SidebarIcon: React.FC = props => {
     <Icon key={link}/>
   );
 
-  return (
+  const internalOrExternalLink = iconProps[Icon.displayName].isExternalLink ? (
+    <div className='sidebar-icon-container' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+      <ReactTransitionGroup.CSSTransition
+        in={isHovered}
+        classNames="icon"
+        timeout={700}
+      >
+        {view}
+      </ReactTransitionGroup.CSSTransition>
+    </div>
+    ) : (
     <Link to={link}>
       <div className='sidebar-icon-container' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
         <ReactTransitionGroup.CSSTransition
@@ -56,6 +76,10 @@ const SidebarIcon: React.FC = props => {
         </ReactTransitionGroup.CSSTransition>
       </div>
     </Link>
+  );
+
+  return (
+    internalOrExternalLink
   );
 };
 

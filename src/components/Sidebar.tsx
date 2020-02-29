@@ -21,7 +21,7 @@ const Sidebar: React.FC = props => {
       </nav>
       <nav className="sidebar-contact-container">
         <a className="resume-icon-wrapper" href="https://www.google.com" target="_blank">
-          <AssignmentIndIcon />
+          <SidebarIcon Icon={AssignmentIndIcon} />
         </a>
       </nav>
     </div>
