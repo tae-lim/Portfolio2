@@ -15,6 +15,7 @@
     "build-prod": "webpack -p --mode production",
     "server-dev": "nodemon server/index.js",
     "react-dev": "webpack -d --watch",
+    "start": "node server/index.js",
     "heroku-postbuild": "webpack -p"
   },
   "dependencies": {
