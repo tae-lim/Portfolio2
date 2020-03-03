@@ -34,7 +34,7 @@ const SidebarIcon: React.FC = props => {
       isExternalLink: false
     },
     AssignmentIndIcon: {
-      link: 'https://www.google.com',
+      link: 'https://drive.google.com/file/d/1CPeWLeXQSmXTI9CcWJOQGqLU-0XN6dI1/view?usp=sharing',
       text: 'Resume',
       isExternalLink: true
     }

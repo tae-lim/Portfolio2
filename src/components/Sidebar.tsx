@@ -20,7 +20,7 @@ const Sidebar: React.FC = props => {
         <SidebarIcon Icon={CallIcon} />
       </nav>
       <nav className="sidebar-contact-container">
-        <a className="resume-icon-wrapper" href="https://www.google.com" target="_blank">
+        <a className="resume-icon-wrapper" href="https://drive.google.com/file/d/1CPeWLeXQSmXTI9CcWJOQGqLU-0XN6dI1/view?usp=sharing" target="_blank">
           <SidebarIcon Icon={AssignmentIndIcon} />
         </a>
       </nav>

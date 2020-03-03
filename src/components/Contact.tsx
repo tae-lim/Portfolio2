@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
       <div className="contact-me-container">
         <h1 className="animated animatedFadeRight fadeInRight">Contact Me</h1>
         <nav className="contact-icon-container animated animatedFadeRight fadeInRight">
-          <a className="contact-icon-wrapper" href="https://www.google.com" target="_blank">
+          <a className="contact-icon-wrapper" href="https://drive.google.com/file/d/1CPeWLeXQSmXTI9CcWJOQGqLU-0XN6dI1/view?usp=sharing" target="_blank">
             <AssignmentIndIcon />
           </a>
           <a className="contact-icon-wrapper" href="mailto:taelim92@gmail.com" target="_blank">
