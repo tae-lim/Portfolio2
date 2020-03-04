@@ -13,9 +13,9 @@
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production",
-    "server-dev": "nodemon server/index.js",
+    "server-dev": "nodemon server/index.ts",
     "react-dev": "webpack -d --watch",
-    "start": "node server/index.js",
+    "start": "node server/index.ts",
     "build": "tsc",
     "postinstall": "npm run build"
   },
