@@ -1,7 +1,10 @@
 import * as React from 'react';
-import TaeIcon from '../pics/tae.png';
+
 import FOG from 'vanta/dist/vanta.fog.min';
 import * as THREE from 'three';
+
+// @ts-ignore
+const TaeIcon = require('../assets/tae.png');
 
 const About: React.FC = () => {
   const [vantaEffect, setVantaEffect] = React.useState(0);

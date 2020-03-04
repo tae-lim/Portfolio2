@@ -11,11 +11,12 @@ import WorkIcon from '@material-ui/icons/Work';
 import PersonIcon from '@material-ui/icons/Person';
 import GroupIcon from '@material-ui/icons/Group';
 
-import CookBukIcon from '../pics/cookbuk.png';
-import BackPackerIcon from '../pics/backpacker.png';
-import GreenwayIcon from '../pics/greenway.png';
-import VPSIcon from '../pics/vps.png';
-import PortolioIcon from '../pics/portfolio.png';
+// @ts-ignore
+const CookBukIcon = require('../assets/cookbuk.png');
+const BackPackerIcon = require('../assets/backpacker.png');
+const GreenwayIcon = require('../assets/greenway.png');
+const VPSIcon = require('../assets/vps.png');
+const PortolioIcon = require('../assets/portfolio.png');
 
 const Work: React.FC = () => {
 
