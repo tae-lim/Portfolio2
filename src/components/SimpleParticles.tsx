@@ -7,7 +7,7 @@ class SimpleParticles extends React.Component {
     return (
       <div className="particle-canvas simple-particles">
         <Particles
-          height={window.outerHeight}
+          height={`${window.outerHeight}`}
           width="100%"
           params={{
             "particles": {

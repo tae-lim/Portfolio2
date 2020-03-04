@@ -3,44 +3,58 @@ import { Link } from 'react-router-dom';
 
 import * as ReactTransitionGroup from 'react-transition-group';
 
-const SidebarIcon: React.FC = props => {
+interface SidebarIconProps {
+  Icon: any;
+}
+
+interface Icon {
+  link: string;
+  text: string;
+  isExternalLink: boolean;
+}
+
+interface IconProps {
+  [key: string]: Icon;
+}
+
+const iconProps: IconProps = {
+  HomeIcon: {
+    link: '/',
+    text: 'Home',
+    isExternalLink: false,
+  },
+  FaceIcon: {
+    link: '/about',
+    text: 'About',
+    isExternalLink: false
+  },
+  WorkIcon: {
+    link: '/work',
+    text: 'Work',
+    isExternalLink: false
+  },
+  CodeIcon: {
+    link: '/skills',
+    text: 'Skills',
+    isExternalLink: false
+  },
+  CallIcon: {
+    link: '/contact',
+    text: 'Contact',
+    isExternalLink: false
+  },
+  AssignmentIndIcon: {
+    link: 'https://drive.google.com/file/d/1CPeWLeXQSmXTI9CcWJOQGqLU-0XN6dI1/view?usp=sharing',
+    text: 'Resume',
+    isExternalLink: true
+  }
+};
+
+const SidebarIcon: React.FC<SidebarIconProps> = props => {
   const { Icon } = props;
-  const [isHovered, setHover] = React.useState(false);
+  const [isHovered, setHover] = React.useState<boolean>(false);
 
-  const iconProps = {
-    HomeIcon: {
-      link: '/',
-      text: 'Home',
-      isExternalLink: false,
-    },
-    FaceIcon: {
-      link: '/about',
-      text: 'About',
-      isExternalLink: false
-    },
-    WorkIcon: {
-      link: '/work',
-      text: 'Work',
-      isExternalLink: false
-    },
-    CodeIcon: {
-      link: '/skills',
-      text: 'Skills',
-      isExternalLink: false
-    },
-    CallIcon: {
-      link: '/contact',
-      text: 'Contact',
-      isExternalLink: false
-    },
-    AssignmentIndIcon: {
-      link: 'https://drive.google.com/file/d/1CPeWLeXQSmXTI9CcWJOQGqLU-0XN6dI1/view?usp=sharing',
-      text: 'Resume',
-      isExternalLink: true
-    }
-  };
-
-  const mapIconName = (iconName, type) => {
+  const mapIconName = (iconName: string, type: string) => {
     if (type === 'link') return iconProps[iconName].link;
     return iconProps[iconName].text;
   }

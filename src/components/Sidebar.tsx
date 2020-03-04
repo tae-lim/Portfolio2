@@ -9,6 +9,8 @@ import CallIcon from '@material-ui/icons/Call';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 
 const Sidebar: React.FC = props => {
+
+  console.log('HomeIcon', HomeIcon)
   return (
     <div className="sidebar-container">
       <div className="logo-container"><Link to="/">TL</Link></div>
