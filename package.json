@@ -16,8 +16,8 @@
     "server-dev": "nodemon server/index.js",
     "react-dev": "webpack -d --watch",
     "start": "node server/index.js",
-    "tsc": "tsc",
-    "postinstall": "npm run build-prod"
+    "build": "tsc",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "react": "^16.12.0",
