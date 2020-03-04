@@ -5,7 +5,8 @@ const BubblesParticles: React.FC = () => {
   return (
     <div className="particle-canvas bubbles-particles">
       <Particles
-        height={`${window.outerHeight}`}
+        //@ts-ignore
+        height={window.outerHeight}
         width="100%"
         //@ts-ignore
         params={{
