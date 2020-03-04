@@ -4,8 +4,8 @@ import * as THREE from 'three';
 //import * as ReactTransitionGroup from 'react-transition-group';
 
 const Home: React.FC = () => {
-  const [vantaEffect, setVantaEffect] = React.useState(0);
-  const myRef = React.useRef(null);
+  const [vantaEffect, setVantaEffect] = React.useState<number | object>(0);
+  const myRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     if (!vantaEffect) {
@@ -24,9 +24,9 @@ const Home: React.FC = () => {
         zoom: 1.38,
       }));
     }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    }
+    // return () => {
+    //   if (vantaEffect) vantaEffect.destroy();
+    // }
   }, [vantaEffect]);
 
   return (

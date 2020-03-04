@@ -4,8 +4,8 @@ import FOG from 'vanta/dist/vanta.fog.min';
 import * as THREE from 'three';
 
 const About: React.FC = () => {
-  const [vantaEffect, setVantaEffect] = React.useState(0);
-  const myRef = React.useRef(null);
+  const [vantaEffect, setVantaEffect] = React.useState<number | object>(0);
+  const myRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     if (!vantaEffect) {
@@ -24,9 +24,9 @@ const About: React.FC = () => {
         zoom: 2.60
       }));
     }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    }
+    // return () => {
+    //   if (vantaEffect) vantaEffect.destroy();
+    // }
   }, [vantaEffect]);
 
   return (

@@ -8,8 +8,8 @@ import * as THREE from 'three';
 import GLOBE from 'vanta/dist/vanta.globe.min';
 
 const Contact: React.FC = () => {
-  const [vantaEffect, setVantaEffect] = React.useState(0);
-  const myRef = React.useRef(null);
+  const [vantaEffect, setVantaEffect] = React.useState<number | object>(0);
+  const myRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     if (!vantaEffect) {
@@ -27,9 +27,9 @@ const Contact: React.FC = () => {
         backgroundColor: '#00315c'
       }));
     }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    }
+    // return () => {
+    //   if (vantaEffect) vantaEffect.destroy();
+    // }
   }, [vantaEffect]);
 
   return (
