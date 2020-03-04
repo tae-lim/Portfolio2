@@ -102,8 +102,7 @@ const BubblesParticles: React.FC = () => {
                 "distance": 250,
                 "size": 0,
                 "duration": 2,
-                "opacity": 0,
-                "speed": 3
+                "opacity": 0
               },
               "repulse": {
                 "distance": 400,
