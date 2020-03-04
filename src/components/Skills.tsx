@@ -13,8 +13,10 @@ const Skills: React.FC = () => {
         maxSpeed: 0.02,
         decel: 1
       };
+        //@ts-ignore
         await TagCanvas.Start('myCanvas', '', options);
       } catch(e) {
+        //@ts-ignore
         document.getElementById('myCanvasContainer').style.display = 'none';
       }
     }

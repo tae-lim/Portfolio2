@@ -9,6 +9,7 @@ class SimpleParticles extends React.Component {
         <Particles
           height={`${window.outerHeight}`}
           width="100%"
+          //@ts-ignore
           params={{
             "particles": {
               "number": {

@@ -7,6 +7,7 @@ const BubblesParticles: React.FC = () => {
       <Particles
         height={`${window.outerHeight}`}
         width="100%"
+        //@ts-ignore
         params={{
           "particles": {
             "number": {

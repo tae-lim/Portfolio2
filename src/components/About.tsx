@@ -24,9 +24,10 @@ const About: React.FC = () => {
         zoom: 2.60
       }));
     }
-    // return () => {
-    //   if (vantaEffect) vantaEffect.destroy();
-    // }
+    return () => {
+      //@ts-ignore
+      if (vantaEffect) vantaEffect.destroy();
+    }
   }, [vantaEffect]);
 
   return (

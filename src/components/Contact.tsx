@@ -27,9 +27,10 @@ const Contact: React.FC = () => {
         backgroundColor: '#00315c'
       }));
     }
-    // return () => {
-    //   if (vantaEffect) vantaEffect.destroy();
-    // }
+    return () => {
+      //@ts-ignore
+      if (vantaEffect) vantaEffect.destroy();
+    }
   }, [vantaEffect]);
 
   return (
