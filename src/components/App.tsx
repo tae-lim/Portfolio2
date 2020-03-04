@@ -14,7 +14,7 @@ const App: React.FC = () => {
     injectScript('https://www.goat1000.com/tagcanvas.js');
   });
 
-  const injectScript = url => {
+  const injectScript = (url: string) => {
     const script = document.createElement('script');
     script.src = url;
     script.async = true;
