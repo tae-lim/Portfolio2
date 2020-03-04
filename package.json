@@ -20,8 +20,8 @@
     "postinstall": "npm run build"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "*",
+    "express": "*",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-particles-js": "^2.7.1",
