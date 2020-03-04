@@ -17,7 +17,7 @@
     "react-dev": "webpack -d --watch",
     "start": "node server/index.js",
     "tsc": "tsc",
-    "postinstall": "npm run tsc"
+    "postinstall": "npm run build-prod"
   },
   "dependencies": {
     "react": "^16.12.0",
