@@ -28,7 +28,7 @@ const Work: React.FC = () => {
     feLanguages: 'HTML, CSS, JavaScript',
     feFLT: 'React, Artyom.JS, Google OAuth',
     beLanguages: 'JavaScript, NoSQL',
-    beFLT: 'Node, Express, MongoDB'
+    beFLT: 'Node, Express, MongoDB',
   };
 
   const backPacker = {
