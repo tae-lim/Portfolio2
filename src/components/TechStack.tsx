@@ -1,7 +1,23 @@
 import * as React from 'react';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
-const TechStack: React.FC = props => {
+interface AppInfo {
+  name: string;
+  description: string;
+  img: any;
+  url: string;
+  github?: string;
+  feLanguages: string;
+  feFLT: string;
+  beLanguages?: string;
+  beFLT?: string;
+}
+
+interface TechStackProps {
+  appInfo: AppInfo;
+}
+
+const TechStack: React.FC<TechStackProps> = props => {
   const { appInfo } = props;
 
   const [view, setView] = React.useState(false);
