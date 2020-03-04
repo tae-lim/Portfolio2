@@ -11,11 +11,11 @@ import WorkIcon from '@material-ui/icons/Work';
 import PersonIcon from '@material-ui/icons/Person';
 import GroupIcon from '@material-ui/icons/Group';
 
-import CookBukIcon from '../pics/cookbuk.png';
-import BackPackerIcon from '../pics/backpacker.png';
-import GreenwayIcon from '../pics/greenway.png';
-import VPSIcon from '../pics/vps.png';
-import PortolioIcon from '../pics/portfolio.png';
+import CookBukIcon from '../assets/cookbuk.png';
+import BackPackerIcon from '../assets/backpacker.png';
+import GreenwayIcon from '../assets/greenway.png';
+import VPSIcon from '../assets/vps.png';
+import PortolioIcon from '../assets/portfolio.png';
 
 const Work: React.FC = () => {
 
