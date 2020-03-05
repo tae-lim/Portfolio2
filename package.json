@@ -16,8 +16,8 @@
     "server-dev": "nodemon server/index.ts",
     "react-dev": "webpack -d --watch",
     "start": "node server/index.ts",
-    "tsc": "tsc",
-    "postinstall": "npm run tsc"
+    "build": "tsc",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
