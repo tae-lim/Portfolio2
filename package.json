@@ -17,7 +17,7 @@
     "react-dev": "webpack -d --watch",
     "start": "node server/index.ts",
     "build": "tsc",
-    "postinstall": "npm run build"
+    "postinstall": "tsc"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
