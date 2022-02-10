@@ -35,7 +35,7 @@
     "express": "^4.17.1",
     "html-webpack-plugin": "^3.2.0",
     "html-webpack-template": "^6.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.12.0",
     "react-css-transition-replace": "^4.0.2",
     "react-dom": "^16.12.0",
